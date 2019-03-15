@@ -4,6 +4,20 @@
     <meta charset="utf-8">
     <title>Educational Production | Studio Zafari</title>
     <style media="screen">
+      .top-banner{
+        color:#fff;
+        background-color:#1d002f;
+        width:100%;
+      }
+      .top-banner-text{
+        padding:210px 23% 210px 80px
+      }
+      .tagline{
+        font-size: 20px;
+        font-weight:100;
+        margin-top:10px;
+        color: #00ecbc;
+      }
       .cat-boxes{
         background-color:#1d002f;
         width:22%;
@@ -19,6 +33,19 @@
         position:relative;
         top:0px;
         transition: background-color 1s, top 1s, color 1s;
+      }
+      @media (max-width: 1076px){
+        .cat-boxes{
+          width:32%;
+        }
+      }
+      @media (max-width: 815px){
+        .cat-boxes{
+          width:60%;
+        }
+        .top-banner-text{
+          padding:210px 23% 150px 10%;
+        }
       }
       .cat-boxes:hover {
         background-color:#602d8f;
@@ -50,22 +77,11 @@
         color:#00ecbc;
         red: #ff2e64;
       }
-      .top-banner{
-        color:#fff;
-        background-color:#1d002f;
-        width:100%;
-      }
-      .tagline{
-        font-size: 20px;
-        font-weight:100;
-        margin-top:10px;
-        color: #00ecbc;
-      }
     </style>
   </head>
   <body style="margin:0px;">
   <div class="top-banner" style="">
-    <div class="" style='padding:210px 260px 210px 80px;'>
+    <div class="top-banner-text" style=''>
       <h1 style="margin-bottom:10px; font-size:50px">Creating immersive learning adventures<span>.</span></h1>
       <p class="tagline" style="">We design unique narrative driven educational content for a global audience</p>
     </div>
@@ -106,4 +122,3 @@
   </div>
   </body>
 </html>
-
