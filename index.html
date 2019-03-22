@@ -10,13 +10,18 @@
     <link rel="shortcut icon" type="image/png" href="img/64w/Favicon.png"/>
     <link rel="stylesheet" href="https://use.typekit.net/www6qwr.css">
     <style media="screen">
+
+      html{
+        scroll-behavior: smooth;
+      }
       .top-banner{
         color:#fff;
-        background-color:#26053a;
+        background-color: #1c152f;
+        /* background-color:#26053a; */
         width:100%;
       }
       .top-banner-text{
-        padding:150px 10% 150px 80px;
+        padding:250px 10% 250px 15%;
       }
       .tagline{
         font-size: 20px;
@@ -28,7 +33,7 @@
         word-spacing:2px;
       }
       .cat-boxes{
-        background-color:#26053a;
+        background-color:#1c152f;
         width:22%;
         padding:40px 50px;
         color: #fff;
@@ -47,29 +52,63 @@
         background-color:#602d8f;
         top:-20px;
         color: #fff;
-        box-shadow: 0px 30px 50px rgba(96, 45, 143, 0.3);
+        box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.2);
+      }
+      .cat-boxes:hover .cat-tab{
+        width:80%;
+      }
+      .cat-boxes:hover .cat-tab{
+        width:80%;
       }
       .top-banner-text h1{
         margin-bottom:10px;
         margin-top:20px;
         font-size:70px;
         font-weight: 900;
-        letter-spacing: 2px;
+        letter-spacing: 0px;
         padding-right: 20px;
         line-height: 75px;
       }
       .sec-02{
-        background-image: url('../img/BKG_Image_01.jpeg');
+        /* background-image: url('../img/BKG_Image_01.jpeg'); */
+        background-color: #602d8f;
         background-position: 0px -400px;
         position: relative;
         margin-top: -200px;
       }
+      .sec-03{
+        background-color: #1c152f;
+        width: 100%;
+      }
       .sec-03-desc{
-        width:60%;
-        padding: 150px 80px;
-        background-color: #743ca9;
+        width:100%;
+        padding: 150px 0px 150px 10%;
         color: #fff;
         box-sizing: border-box;
+      }
+      /* .sec-03-desc  */
+      h2{
+        font-size: 70px;
+        margin-bottom: 40px;
+        margin-top: 15px;
+        font-weight: 900;
+      }
+      .s3-text-div{
+        width: 45%;
+        margin-right: 6%;
+        max-width: 575px;
+      }
+      .sec-03-vid-container{
+        width: 49%;
+        /* max-width: 400px; */
+
+      }
+      .sec-03-vid-block{
+        margin-top: 25px;
+        background-color: #602d8f;
+        width: 100%;
+        padding-top:52.25%;
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
       }
       .s-04-video{
       position: relative;
@@ -91,6 +130,16 @@
         #bx-03{
           width: 77%;
         }
+        .sec-03-desc{
+          padding-right: 10%
+        }
+        .s3-text-div{
+          width:100%;
+          max-width:none;
+        }
+        .sec-03-vid-container {
+          width: 100%;
+        }
       }
       @media (max-width: 815px){
         .cat-boxes{
@@ -100,14 +149,19 @@
           width: 60%;
         }
         .top-banner-text{
-          padding:150px 10% 100px 10%;
+          padding:150px 10% 150px 10%;
         }
         .s-04-video{
           top:0px;
         }
-        .sec-03-desc{
+        .s3-text-div{
+          width: 100%;
+        }
+        .sec-03-box{
           width:100%;
-          padding: 100px 10%;
+          max-width: none;
+          margin-top: 70px;
+          height: 200px
         }
       }
       @media (max-width: 640px){
@@ -116,10 +170,20 @@
           line-height: 50px;
         }
         .top-banner-text{
-          padding:100px 10% 100px 10%;
+          padding:100px 10% 150px 10%;
         }
         .vid-div{
           display: none;
+        }
+        .sec-03-desc{
+          padding-left: 10%
+        }
+        .s3-text-div {
+        margin-right: 0px;
+        }
+        /* .s3-text-div  */
+        h2{
+          font-size: 50px;
         }
       }
 
@@ -128,6 +192,7 @@
         height:10px;
         margin-top:7px;
         background-color:#00ecbc;
+        transition: width 1s;
       }
       .cat-button{
         padding:10px 20px;
@@ -143,6 +208,8 @@
         margin: 0px 0%;
         justify-content:center;
         top:-90px;
+        /* animation-name: pos;
+        animation-duration: 2s; */
       }
       h1 span{
         color:#00ecbc;
@@ -154,67 +221,183 @@
       p span{
         color: #fff;
       }
+      @keyframes pos {
+          from {top: +90px;}
+          to {top: 0px;}
+      }
+      @keyframes fade {
+        from {opacity: 0;}
+        to {opacity: 1;}
+      }
+      #bx-01{
+        animation-name: pos, fade;
+        animation-duration: 1.5s;
+      }
+      #bx-02{
+        animation-name: pos, fade;
+        animation-duration: 2s;
+      }
+      #bx-03{
+        animation-name: pos, fade;
+        animation-duration: 2.5s;
+      }
+      div a span{
+        position:absolute;
+        width:100%;
+        height:100%;
+        top:0;
+        left: 0;
+      }
+      .service-boxes{
+        width: 75%;
+        padding: 35px 5%;
+        border-width: 0px;
+        border-style:solid;
+        border-color: #1c152f;
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.25);
+        margin: 20px;
+        color: white;
+        /* background-color: #1c152f; */
+      }
+      .service-boxes h3{
+        font-size: 30px;
+        font-weight: 900;
+        letter-spacing: 2px;
+        margin: 10px 0px;
+      }
     </style>
   </head>
-  <body style="margin:0px; font-family: proxima-nova, sans-serif; width: 100%; box-sizing: border-box; ">
-  <div class="top-banner" style="">
-    <div class="top-banner-text" style=''>
-      <img src="img/Zafari_Logo_01-01.png" alt="Zafari Logo" style="width:200px;"/>
-      <h1 style="">Creating immersive learning adventures<span>.</span></h1>
-      <p class="tagline" style="">Design | Filming | Editing | Scritwriting | Animation</p>
+<body style="margin:0px; font-family: proxima-nova, sans-serif; width: 100%; max-width: 1700px; box-sizing: border-box;">
+  <div style="">
+    <div class="top-banner" style="">
+      <div class="top-banner-text" style=''>
+        <img src="img/Zafari_Logo_01-01.png" alt="Zafari Logo" style="width:200px;"/>
+        <h1 style="">Creating Immersive Learning Adventures<span>.</span></h1>
+        <p class="tagline" style="">Design | Filming | Editing | Scritwriting | Animation</p>
+        <div class="Banner-buttons" style="display: flex">
+          <div style="background-color: #602d8f; width: 100px; padding: 10px 20px; color: white; margin-right: 20px; text-align: center">Watch Demo
+          </div>
+          <div style="background-color: white; width: 100px; padding: 10px 20px; color: black; text-align: center;">Contact Us
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div style="overflow-y: hidden; height: 200px; width:100%;">
-      <div class="" style= "width:110%;height: 153px;transform: rotate(5deg);position: relative;background-color: #26053a;top: -66px;z-index: 1;">
-      </div>
-  </div>
-  <div class="sec-02" style="">
-      <div class="cat-sect" style="z-index: 2">
-            <div class="cat-boxes" id="bx-01" style="">
-              <div class="cat-tab" style="">
-              </div>
-              <h1 style="font-size: 20px">Experiential Learning</h1>
-              <p>We create narrative driven content that not only educates but takes the audience on an immersive learning journey.
-                Studio Zafari is a full service studio specialising in educational production and learning based adventures.</p>
-                <div class="cat-button" style="">
-                  Discover Move
-                </div>
-            </div>
-            <div class="cat-boxes" id="bx-02" style="">
-              <div class="cat-tab" style="">
-              </div>
-              <h1 style="font-size: 20px">Interactive Adventures</h1>
-              <p>We create narrative driven content that not only educates but takes the audience on an immersive learning journey.
-                Studio Zafari is a full service studio specialising in educational production and learning based adventures.</p>
-                <div class="cat-button" style="">
-                  Discover Move
-                </div>
-            </div>
-            <div class="cat-boxes" id="bx-03" style="">
-              <div class="cat-tab" style="">
-              </div>
-              <h1 style="font-size: 20px">Stand-Alone Stories</h1>
-              <p>We create narrative driven content that not only educates but takes the audience on an immersive learning journey.
-                Studio Zafari is a full service studio specialising in educational production and learning based adventures.</p>
-                <div class="cat-button" style="">
-                  Discover Move
-                </div>
-            </div>
-      </div>
-  </div>
-  <div class="sec-03" style="background-image: url('../img/danny-feng-749338-unsplash.jpg');background-position: -1441px -1110px; width:100%">
-    <div class="sec-03-desc"style="">
-      <h2 style="padding: 0px 0px;">Educational Production Studio<span>.</span></h2>
-      <p>We create narrative driven content that not only educates but takes the audience on an immersive learning journey. Studio Zafari is a full service studio specialising in educational production and learning based adventures.</p>
+    <div style="overflow-y: hidden; height: 200px; width:100%;">
+        <div class="" style= "width:110%;height: 153px;transform: rotate(5deg);position: relative; background-color: #1c152f; top: -66px;z-index: 1;">
+        </div>
     </div>
-  </div>
-  <div class="sec-04">
-    <div class="s-04-video" style="">
-      <div class="vid-div" style="">
-        <iframe style="padding: 0px 0px; display: block;" src="https://player.vimeo.com/video/323107042?autoplay=1&loop=1&autopause=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <div class="sec-02" id="Products" style="">
+        <div class="cat-sect" style="z-index: 2">
+              <div class="cat-boxes" id="bx-01" style="">
+                <div class="cat-tab" style="">
+                </div>
+                <h1 style="font-size: 20px">Experiential Learning</h1>
+                <p>We create narrative driven content that not only educates but takes the audience on an immersive learning journey.
+                  Studio Zafari is a full service studio specialising in educational production and learning based adventures.</p>
+                  <div class="cat-button" style="">
+                    Discover Move
+                  </div>
+                  <a href="#Experiential"><span></span></a>
+              </div>
+              <div class="cat-boxes" id="bx-02" style="">
+                <div class="cat-tab" style="">
+                </div>
+                <h1 style="font-size: 20px">Interactive Adventures</h1>
+                <p>We create narrative driven content that not only educates but takes the audience on an immersive learning journey.
+                  Studio Zafari is a full service studio specialising in educational production and learning based adventures.</p>
+                  <div class="cat-button" style="">
+                    Discover Move
+                  </div>
+                  <a href="#Interactive"><span></span></a>
+              </div>
+              <div class="cat-boxes" id="bx-03" style="">
+                <div class="cat-tab" style="">
+                </div>
+                <h1 style="font-size: 20px">Stand-Alone Stories</h1>
+                <p>We create narrative driven content that not only educates but takes the audience on an immersive learning journey.
+                  Studio Zafari is a full service studio specialising in educational production and learning based adventures.</p>
+                  <div class="cat-button" style="">
+                    Discover Move
+                  </div>
+              </div>
+        </div>
+    </div>
+    <div class="sec-03" id="About" style="">
+      <div class="sec-03-desc" style="display: flex; flex-wrap: wrap;">
+            <div class="s3-text-div"style="">
+                <h2 style="padding: 0px 0px;">Educational Production Studio<span>.</span></h2>
+                <p style="padding-right: 50px">We create narrative driven content that not only educates but takes the audience on an immersive learning journey. Studio Zafari is a full service studio specialising in educational production and learning based adventures.</p>
+           </div>
+           <div class="sec-03-vid-container" style="display: flex;
+           align-items: center;">
+             <div class="sec-03-vid-block">
+
+             </div>
+           </div>
       </div>
+    </div>
+    <div class="sec-04"id="Experiential" style="background-color:#602d8f">
+      <div class="s-04-main" style="padding: 150px 200px 150px 300px; background-color: #1c152f; width:75%; box-sizing: border-box;">
+        <div class="" style="width: 70%;">
+          <h2 style="color:#fff;">Experiential Learning<span>.</span></h2>
+          <p style="color:#fff">We create narrative driven content that not only educates but takes the audience on an immersive learning journey. Studio Zafari is a full service studio specialising in educational production and learning based adventures.</p>
+          <div style="background-color: #602d8f; width: 100px; padding: 10px 20px; color: white; margin-top: 50px; text-align: center">Learn More</div>
+        </div>
+      </div>
+    </div>
+    <div class="sec-04"id="Interactive" style="background-color:#602d8f">
+      <div class="s-04-main" style="padding: 150px 170px; background-color: #1c152f; width:75%; margin-left:25%; box-sizing: border-box;">
+        <div class="" style="width: 70%;">
+          <h2 style="color:#fff">Interactive Adventures<span>.</span></h2>
+          <p style="color:#fff">We create narrative driven content that not only educates but takes the audience on an immersive learning journey. Studio Zafari is a full service studio specialising in educational production and learning based adventures.</p>
+          <div style="background-color: #602d8f; width: 100px; padding: 10px 20px; color: white; margin-top: 50px; text-align: center">Learn More</div>
+        </div>
+      </div>
+    </div>
+    <div class="sec-05" id="Latest" style="background-color:#1c152f">
+      <div class="" style="padding: 250px 80px; color: white; text-align: center;">
+        <p style="color:#00ecbc; letter-spacing: 2px; font-weight: 900;">Latest Content</p>
+        <h2 style="margin: 20px;">Data Privacy</h2>
+        <h3 style="font-size: 40px; font-weight:100;margin: 10px;">What is a Cookie?</h3>
+        <p>Why are cookies so widely used online? Part of our interactive experience on Data Privacy</p>
+      </div>
+    </div>
+    <div class="sec-07" id="Services" style="display: flex">
+      <div class="" style="width: 50%; padding: 70px 120px; box-sizing: border-box; background-color: #602d8f; color: white;">
+        <h2>Our Services<span>.</span></h2>
+        <p>We offer a range of different services which we use to deliver high quality content to you.</p>
+      </div>
+      <div class="" style="width: 50%; background-color: #1c152f; padding: 70px 0px;">
+          <div class="" style="justify-content: center; display: flex; flex-wrap: wrap;">
+              <div class="service-boxes" style="">
+                <h3 style="">Design</h3>
+                <p>We will work with you to conceptualize and create a visual style</p>
+              </div>
+              <div class="service-boxes" style="">
+                <h3 style="">Filming</h3>
+                <p>We will work with you to conceptualize and create a visual style</p>
+              </div>
+              <div class="service-boxes" style="">
+                <h3 style="">Animation</h3>
+                <p>We will work with you to conceptualize and create a visual style</p>
+              </div>
+              <div class="service-boxes" style="">
+                <h3 style="">Scriptwriting</h3>
+                <p>We will work with you to conceptualize and create a visual style</p>
+              </div>
+              <div class="service-boxes" style="">
+                <h3 style="">Editing</h3>
+                <p>We will work with you to conceptualize and create a visual style</p>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="sec-08" id="Contact" style="background-color: #602d8f">
+      <script src="//www.powr.io/powr.js?external-type=html"></script>
+      <div class="powr-form-builder" id="92637546_1553173479"></div>
+
     </div>
   </div>
 
-  </body>
+</body>
 </html>
