@@ -105,7 +105,6 @@
       .sec-03-vid-container{
         width: 49%;
         /* max-width: 400px; */
-
       }
       .sec-03-vid-block{
         margin-top: 25px;
@@ -223,6 +222,31 @@
         background-color: #1c152f;
         padding: 70px 0px;
       }
+      #exp-block{
+        padding: 150px 10% 150px 20%;
+      }
+      #exp-int{
+        padding: 150px 170px;
+        margin-left:25%;
+      }
+      .s-04-block{
+        width: 70%;
+      }
+      .Watch-Btn{
+        padding:10px 40px;
+        background-color: none;
+        border-width: 3px;
+        border-style: solid;
+        width: 100px;
+        display: inline-block;
+        border-radius: 50px;
+        transition: background-color 0.5s
+      }
+      .Watch-Btn:hover{
+        color: var(--Dark);
+        background-color: white;
+        border-color: white;
+      }
       @media (max-width: 1076px){
         .cat-boxes{
           width:32%;
@@ -267,6 +291,15 @@
           margin-top: 70px;
           height: 200px
         }
+        #exp-block{
+          padding: 150px 10% 150px 10%;
+        }
+        #exp-int{
+          padding: 150px 10%;
+        }
+        .service-boxes{
+          padding: 0px;
+        }
       }
       @media (max-width: 640px){
         .top-banner-text h1{
@@ -298,6 +331,12 @@
         }
         .service-boxes{
           width:50%
+        }
+        .s-04-block{
+          width: 100%;
+        }
+        #exp-int{
+          padding: 150px 10%;
         }
       }
 
@@ -370,8 +409,8 @@
       </div>
     </div>
     <div class="sec-04"id="Experiential" style="background-color:#602d8f">
-      <div class="s-04-main" style="padding: 150px 200px 150px 300px; background-color: #1c152f; width:75%; box-sizing: border-box;">
-        <div class="" style="width: 70%;">
+      <div class="s-04-main" id="exp-block" style="background-color: #1c152f; width:75%; box-sizing: border-box;">
+        <div class="s-04-block" style="">
           <h2 style="color:#fff;">Experiential Learning<span>.</span></h2>
           <p style="color:#fff">We create narrative driven content that not only educates but takes the audience on an immersive learning journey. Studio Zafari is a full service studio specialising in educational production and learning based adventures.</p>
           <div style="background-color: #602d8f; width: 100px; padding: 10px 20px; color: white; margin-top: 50px; text-align: center">Learn More</div>
@@ -379,8 +418,8 @@
       </div>
     </div>
     <div class="sec-04"id="Interactive" style="background-color:#602d8f">
-      <div class="s-04-main" style="padding: 150px 170px; background-color: #1c152f; width:75%; margin-left:25%; box-sizing: border-box;">
-        <div class="" style="width: 70%;">
+      <div class="s-04-main" id="exp-int" style="background-color: #1c152f; width:75%; box-sizing: border-box;">
+        <div class="s-04-block" style="">
           <h2 style="color:#fff">Interactive Adventures<span>.</span></h2>
           <p style="color:#fff">We create narrative driven content that not only educates but takes the audience on an immersive learning journey. Studio Zafari is a full service studio specialising in educational production and learning based adventures.</p>
           <div style="background-color: #602d8f; width: 100px; padding: 10px 20px; color: white; margin-top: 50px; text-align: center">Learn More</div>
@@ -393,6 +432,7 @@
         <h2 style="margin: 20px;">Data Privacy</h2>
         <h3 style="font-size: 40px; font-weight:100;margin: 10px;">What is a Cookie?</h3>
         <p>Why are cookies so widely used online? Part of our interactive experience on Data Privacy</p>
+        <div class="Watch-Btn"style="">Watch Now!</div>
       </div>
     </div>
     <div class="sec-07" id="Services" style="display: flex">
