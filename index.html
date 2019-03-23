@@ -30,7 +30,6 @@
       .tagline{
         font-size: 20px;
         font-weight:100;
-        margin-top:10px;
         padding-right:20%;
         color: var(--Green);
         letter-spacing:1px;
@@ -90,13 +89,6 @@
         color: #fff;
         box-sizing: border-box;
       }
-      /* .sec-03-desc  */
-      h2{
-        font-size: 70px;
-        margin-bottom: 40px;
-        margin-top: 15px;
-        font-weight: 900;
-      }
       .s3-text-div{
         width: 45%;
         margin-right: 6%;
@@ -114,9 +106,9 @@
         box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
       }
       .s-04-video{
-      position: relative;
-      margin: auto;
-      top:-50px
+        position: relative;
+        margin: auto;
+        top:-50px
       }
       .vid-div{
         display: block;
@@ -157,6 +149,12 @@
         /* animation-name: pos;
         animation-duration: 2s; */
       }
+      h2{
+        font-size: 70px;
+        margin-bottom: 40px;
+        margin-top: 15px;
+        font-weight: 900;
+      }
       h1 span{
         color:#00ecbc;
         red: #ff2e64;
@@ -166,14 +164,6 @@
       }
       p span{
         color: #fff;
-      }
-      @keyframes pos {
-          from {top: +90px;}
-          to {top: 0px;}
-      }
-      @keyframes fade {
-        from {opacity: 0;}
-        to {opacity: 1;}
       }
       #bx-01{
         animation-name: pos, fade;
@@ -200,7 +190,7 @@
         border-width: 0px;
         border-style:solid;
         border-color: #1c152f;
-        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.25);
+        /* box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.25); */
         margin: 20px;
         color: white;
         /* background-color: #1c152f; */
@@ -247,6 +237,26 @@
         background-color: white;
         border-color: white;
       }
+      a{
+        text-decoration: none;
+      }
+      .sec-08{
+        background-color: var(--Dark);
+      }
+
+      /* Animation */
+
+      @keyframes pos {
+          from {top: +90px;}
+          to {top: 0px;}
+      }
+      @keyframes fade {
+        from {opacity: 0;}
+        to {opacity: 1;}
+      }
+
+      /* Responsive */
+
       @media (max-width: 1076px){
         .cat-boxes{
           width:32%;
@@ -267,6 +277,14 @@
         .s-07-title{
           padding-left: 8%;
           padding-right: 8%;
+        }
+      }
+      @media (max-width: 965px) {
+        .top-banner-text h1{
+          padding-right: 100px;
+        }
+        .top-banner-text{
+          padding:200px 10% 200px 15%;
         }
       }
       @media (max-width: 815px){
@@ -307,7 +325,7 @@
           line-height: 50px;
         }
         .top-banner-text{
-          padding:100px 10% 150px 10%;
+          padding:70px 10% 150px 10%;
         }
         .vid-div{
           display: none;
@@ -342,9 +360,8 @@
           margin-left: -30%
         }
       }
-
-
     </style>
+
   </head>
 <body style="margin:0px; font-family: proxima-nova, sans-serif; width: 100%; max-width: 1700px; box-sizing: border-box;">
   <div style="">
@@ -352,12 +369,12 @@
       <div class="top-banner-text" style=''>
         <img src="img/Zafari_Logo_01-01.png" alt="Zafari Logo" style="width:200px; margin: 10px 0px;"/>
         <h1 style="">Creating Immersive Learning Adventures<span>.</span></h1>
-        <p class="tagline" style="">Design | Filming | Editing | Scritwriting | Animation</p>
+        <p class="tagline" style="">Design | Filming | Editing | Scriptwriting | Animation</p>
         <div class="Banner-buttons" style="display: flex; margin: 30px 0px;">
-          <div style="background-color: #602d8f; width: 100px; padding: 12px 35px; color: white; margin-right: 20px; text-align: center">Watch Demo
-          </div>
-          <div style="background-color: var(--Red); width: 100px; padding: 12px 35px; color: #fff; text-align: center;">Contact Us
-          </div>
+          <a href="/"><div style="background-color: #602d8f; width: 100px; padding: 12px 35px; color: white; margin-right: 20px; text-align: center">Watch Demo
+          </div></a>
+          <a href="#Contact"><div style="background-color: var(--Red); width: 100px; padding: 12px 35px; color: #fff; text-align: center; text-decoration: none">Contact Us
+          </div></a>
         </div>
       </div>
     </div>
@@ -394,6 +411,7 @@
                   <div class="cat-button" style="">
                     Discover Move
                   </div>
+                  <a href="#Stand-Alone"><span></span></a>
               </div>
         </div>
     </div>
@@ -421,6 +439,7 @@
       </div>
     </div>
     <div class="sec-04"id="Interactive" style="background-color:#602d8f">
+
       <div class="s-04-main" id="exp-int" style="background-color: #1c152f; width:75%; box-sizing: border-box;">
         <div class="s-04-block" id="int-resp" style="">
           <h2 style="color:#fff">Interactive Adventures<span>.</span></h2>
@@ -429,9 +448,19 @@
         </div>
       </div>
     </div>
+    <div class="sec-04"id="Stand-Alone" style="background-color:#602d8f">
+      <div class="s-04-main" id="exp-block" style="background-color: #1c152f; width:75%; box-sizing: border-box;">
+        <div class="s-04-block" style="">
+          <h2 style="color:#fff;">Stand-Alone
+            Stories<span>.</span></h2>
+          <p style="color:#fff">We create narrative driven content that not only educates but takes the audience on an immersive learning journey. Studio Zafari is a full service studio specialising in educational production and learning based adventures.</p>
+          <div style="background-color: #602d8f; width: 100px; padding: 10px 20px; color: white; margin-top: 50px; text-align: center">Learn More</div>
+        </div>
+      </div>
+    </div>
     <div class="sec-05" id="Latest" style="background-color:#1c152f">
       <div class="" style="padding: 250px 80px; color: white; text-align: center;">
-        <p style="color:#00ecbc; letter-spacing: 2px; font-weight: 900;">Latest Content</p>
+        <p style="color:#00ecbc; letter-spacing: 2px; font-weight: 900;">Our Latest Content</p>
         <h2 style="margin: 20px;">Data Privacy</h2>
         <h3 style="font-size: 40px; font-weight:100;margin: 10px;">What is a Cookie?</h3>
         <p>Why are cookies so widely used online? Part of our interactive experience on Data Privacy</p>
@@ -473,10 +502,19 @@
           </div>
       </div>
     </div>
-    <div class="sec-08" id="Contact" style="background-color: var(--Dark);">
-      <script src="//www.powr.io/powr.js?external-type=html"></script>
-      <div class="powr-form-builder" id="92637546_1553173479"></div>
-
+    <div class="sec-08" id="Contact" style="">
+      <div class="uCalc_184258" style="padding: 20px; background-color: inherit"></div>
+          <script>
+              var widgetOptions184258 = {
+                  bg_color: "transparent"
+              };
+              (function() {
+                  var a = document.createElement("script"), h = "head";
+                  a.async = true;
+                  a.src = (document.location.protocol == "https:" ? "https:" : "http:") + "//ucalc.pro/api/widget.js?id=184258&t="+Math.floor(new Date()/18e5);
+                  document.getElementsByTagName(h)[0].appendChild(a)
+              })();
+          </script>
     </div>
   </div>
 
