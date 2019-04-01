@@ -7,16 +7,19 @@
     <meta name="keywords" content="Experiential, Post, Editing, Filming, Education, Scriptwriting,Learning, Edtech, Production, Educational Production, Global, E-learning, Videos, Explainers, Interactive Videos,">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Educational Production | Studio Zafari</title>
-    <link rel="shortcut icon" type="image/png" href="img/64w/Favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="img/64w/Favicon_01.png"/>
     <link rel="stylesheet" href="https://use.typekit.net/www6qwr.css">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
     <style media="screen">
       :root{
-        --Dark: #1c152f;
+        --Dark: #25003d;
         --Green:#00ecbc;
         --Red: #ff2e64;
         --Purple: #602d8f;
       }
+      /* *{
+        transition: all 5s;
+      } */
       body{
         font-family: 'Work Sans', sans-serif;
       }
@@ -34,6 +37,16 @@
         padding:200px 10% 230px 15%;
         transition: all 1s;
       }
+      .top-banner-text h1{
+        margin-bottom:10px;
+        margin-top:20px;
+        font-size:70px;
+        font-weight: 900;
+        letter-spacing: 1px;
+        padding-right: 20px;
+        line-height: 77px;
+        transition: all 1s;
+      }
       .tagline{
         font-size: 20px;
         font-weight:100;
@@ -41,6 +54,14 @@
         color: var(--Green);
         letter-spacing:1px;
         word-spacing:2px;
+        text-transform: uppercase;
+      }
+      .Top-Btn{
+        background-color: var(--Purple);
+        transition: background-color 0.5s;
+      }
+      .Top-Btn:hover{
+          background-color: var(--Red);
       }
       .cat-boxes{
         background-color:var(--Dark);
@@ -69,16 +90,6 @@
       }
       .cat-boxes:hover .cat-tab{
         width:80%;
-      }
-      .top-banner-text h1{
-        margin-bottom:10px;
-        margin-top:20px;
-        font-size:70px;
-        font-weight: 900;
-        letter-spacing: 0px;
-        padding-right: 20px;
-        line-height: 75px;
-        transition: all 1s;
       }
       .sec-02{
         /* background-image: url('../img/BKG_Image_01.jpeg'); */
@@ -113,6 +124,13 @@
         padding-top:52.25%;
         box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
       }
+      .s-04-main{
+        width:75%;
+        box-sizing: border-box;
+      }
+      /* .s-04-main:hover{
+        width: 50%;
+      } */
       .s-04-video{
         position: relative;
         margin: auto;
@@ -239,7 +257,7 @@
         width: 100px;
         display: inline-block;
         border-radius: 50px;
-        transition: background-color 0.5s
+        transition: background-color 0.5s;
       }
       .Watch-Btn:hover{
         background-color: var(--Purple);
@@ -388,9 +406,9 @@
         <h1 style="">Creating Immersive Learning Adventures<span>.</span></h1>
         <p class="tagline" style="">Design | Filming | Editing | Scriptwriting | Animation</p>
         <div class="Banner-buttons" style="display: flex; flex-wrap: wrap; margin: 30px 0px;">
-          <a href="/"><div style="background-color: #602d8f; width: 110px; padding: 12px 35px; color: white; margin-right: 20px; margin-bottom: 10px; text-align: center">Watch Demo
+          <a href="/"><div class="Top-Btn" style="width: 110px; padding: 12px 35px; color: white; margin-right: 20px; margin-bottom: 10px; text-align: center">Watch Demo
           </div></a>
-          <a href="#Contact"><div style="background-color: var(--Red); width: 110px; padding: 12px 35px; color: #fff; text-align: center; text-decoration: none">Contact Us
+          <a href="#Contact"><div class="Top-Btn" style="width: 110px; padding: 12px 35px; color: #fff; text-align: center; text-decoration: none">Contact Us
           </div></a>
         </div>
       </div>
@@ -447,8 +465,8 @@
       </div>
     </div>
     <div class="sec-04"id="Experiential" style="background-color:#602d8f">
-      <div class="s-04-main" id="exp-block" style="background-color: #1c152f; width:75%; box-sizing: border-box;">
-        <div class="s-04-block" style="">
+      <div class="s-04-main" id="exp-block" style="background-color: #1c152f;">
+        <div class="s-04-block" id="scrEf" style="">
           <h2 style="color:#fff;">Experiential Learning<span>.</span></h2>
           <p style="color:#fff">We create narrative driven content that not only educates but takes the audience on an immersive learning journey. Studio Zafari is a full service studio specialising in educational production and learning based adventures.</p>
           <div class="learn-btn" style="">Learn More</div>
@@ -465,7 +483,7 @@
       </div>
     </div>
     <div class="sec-04"id="Stand-Alone" style="background-color:#602d8f">
-      <div class="s-04-main" id="exp-block" style="background-color: #1c152f; width:75%; box-sizing: border-box;">
+      <div class="s-04-main" id="exp-block" style="background-color: #1c152f;">
         <div class="s-04-block" style="">
           <h2 style="color:#fff;">Stand-Alone
             Stories<span>.</span></h2>
@@ -519,7 +537,7 @@
       </div>
     </div>
     <div class="sec-08" id="Contact" style="">
-      <div class="uCalc_184258" style="padding: 20px; background-color: inherit"></div>
+      <div class="uCalc_184258" style="padding: 20px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25)"></div>
           <script>
               var widgetOptions184258 = {
                   bg_color: "transparent"
@@ -535,6 +553,17 @@
       <div class="powr-form-builder" id="92637546_1553173479"></div> -->
     </div>
   </div>
-
+  <!-- <script>
+  window.onscroll = function() {scrollEff()};
+  function scrollEff(){
+      var elmnt = document.getElementsByTagName("body");
+      var x = elmnt.scrollTop;
+      if(document.body.scrollTop > 4000 || document.documentElement.scrollTop > 4000){
+      document.getElementById("scrEf").style = "opacity: 1;";
+    } else {
+      document.getElementById("scrEf").style = "opactiy: 0";
+    }
+  }
+  </script> -->
 </body>
 </html>
