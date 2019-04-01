@@ -9,7 +9,7 @@
     <title>Educational Production | Studio Zafari</title>
     <link rel="shortcut icon" type="image/png" href="img/64w/Favicon_01.png"/>
     <link rel="stylesheet" href="https://use.typekit.net/www6qwr.css">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700,800" rel="stylesheet">
     <style media="screen">
       :root{
         --Dark: #25003d;
@@ -31,7 +31,9 @@
         background-color: var(--Dark);
         /* background-image: url('../img/BKG_Image_01.jpeg'); */
         width:100%;
-
+      }
+      a{
+        color: var(--Green);
       }
       .top-banner-text{
         padding:200px 10% 230px 15%;
@@ -277,6 +279,15 @@
         text-align: center;
         box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
       }
+      .contact-text{
+        width: 50%;
+        color: white;
+        padding: 80px 120px;
+        box-sizing: border-box;
+      }
+      .contact-form{
+        width: 50%;
+      }
 
       /* Animation */
 
@@ -319,6 +330,13 @@
         }
         .top-banner-text{
           padding:200px 10% 200px 15%;
+        }
+        .contact-text{
+          width: 100%;
+          padding-bottom: 50px;
+        }
+        .contact-form{
+          width: 100%;
         }
       }
       @media (max-width: 815px){
@@ -402,7 +420,7 @@
     <div class="top-banner" style="">
       <div class="top-banner-text" style=''>
         <img src="img/Zafari_Logo_01-01.svg" alt="Zafari Logo" style="width:200px; margin: 10px 0px;"/>
-        <h1 style="">Creating Immersive Learning Adventures<span>.</span></h1>
+        <h1 style="">Share your knowledge<span>.</span> Create videos</h1>
         <p class="tagline" style="">Design | Filming | Editing | Scriptwriting | Animation</p>
         <div class="Banner-buttons" style="display: flex; flex-wrap: wrap; margin: 30px 0px;">
           <a href="/"><div class="Top-Btn" style="width: 110px; padding: 12px 35px; color: white; margin-right: 20px; margin-bottom: 10px; text-align: center">Watch Demo
@@ -535,9 +553,15 @@
           </div>
       </div>
     </div>
-    <div class="sec-08" id="Contact" style="">
-
-      <div class="uCalc_184258" style="padding: 0px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25)"></div>
+    <div class="sec-08" id="Contact" style="display: flex; flex-wrap: wrap;">
+      <div class="contact-text" style="">
+        <h2>Contact Us<span>.</span> </h2>
+        <p>Tell us what you are looking for and we will get back to you ASAP.</p>
+        <p>You can also reach us on: <a href="mailto:info@studiozafari.com?Subject=Hello!">info@studiozafari.com</a></p>
+      </div>
+      <div class="contact-form" style="">
+        <div class="uCalc_184258" style="padding: 0px;"></div>
+      </div>
           <script>
               var widgetOptions184258 = {
                   bg_color: "transparent"
