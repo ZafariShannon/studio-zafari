@@ -2,14 +2,25 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-                <meta name="robots" content="noindex">
     <meta name="description" content="Full-service educational production company. Creating immersive learning adventures. Get a Quote">
     <meta name="keywords" content="Experiential, Post, Editing, Filming, Education, Scriptwriting,Learning, Edtech, Production, Educational Production, Global, E-learning, Videos, Explainers, Interactive Videos,">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property=”og:title” content="Educational Production | Studio Zafari" />
+    <meta property=”og:description” content="Create video content that sparks curiosity | Studio Zafari a full-service educational production company. Contact us now for a quote." />
+    <meta property=”og:url” content="https://www.studiozafari.com"/>
+    <meta property=”og:image” content="img/Social_Img_01-01.png"/>
+    <meta name=”twitter:card” content=”summary_large_image”>
+    <meta name=”twitter:title” content="Educational Production | Studio Zafari"/>
+    <meta name=”twitter:description” content="Create video content that sparks curiosity | Studio Zafari a full-service educational production company. Contact us now for a quote."/>
+    <meta name=”twitter:url” content="https://www.studiozafari.com" />
+    <meta name=”twitter:image” content="img/Social_Img_01-01.png">
+
     <title>Educational Production | Studio Zafari</title>
+
     <link rel="shortcut icon" type="image/png" href="img/64w/Favicon_01.png"/>
     <link rel="stylesheet" href="https://use.typekit.net/www6qwr.css">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <style media="screen">
       :root{
         --Dark: #25003d;
@@ -22,6 +33,10 @@
       } */
       body{
         font-family: 'Work Sans', sans-serif;
+        background-color: var(--Purple);
+        margin:0px;
+        width: 100%;
+        box-sizing: border-box;
       }
       html{
         scroll-behavior: smooth;
@@ -29,11 +44,14 @@
       .top-banner{
         color:#fff;
         background-color: var(--Dark);
-        /* background-image: url('../img/BKG_Image_01.jpeg'); */
+        background-image: url('../src/VA_CE_C4_Acc.mp4');
         width:100%;
       }
       a{
         color: var(--Green);
+      }
+      p{
+        color: #fff;
       }
       .top-banner-text{
         padding:200px 15% 230px 15%;
@@ -60,6 +78,12 @@
       }
       .Top-Btn{
         background-color: var(--Purple);
+        width: 110px;
+        padding: 12px 35px;
+        color: white;
+        margin-right: 20px;
+        text-align: center;
+        text-decoration: none;
         transition: background-color 0.5s;
       }
       .Top-Btn:hover{
@@ -121,13 +145,14 @@
       }
       .sec-03-vid-block{
         margin-top: 25px;
-        background-color: var(--Purple);
+        /* background-color: var(--Purple); */
         width: 100%;
-        padding-top:52.25%;
+        /* padding-top:52.25%; */
         box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+        overflow: hidden;
       }
       .s-04-main{
-        width:75%;
+        width:50%;
         box-sizing: border-box;
       }
       /* .s-04-main:hover{
@@ -147,8 +172,8 @@
         box-shadow: 0px 0px 50px rgba(96, 45, 143, 0.5);
       }
       .s-07-title{
-        width: 60%;
-        padding: 70px 120px;
+        width: 80%;
+        padding: 70px 80px 70px 150px;
         box-sizing: border-box;
         background-color: var(--Purple);
         color: white;
@@ -191,6 +216,13 @@
       }
       p span{
         color: #fff;
+      }
+      h6{
+        color:var(--Green);
+        font-weight: 200;
+        letter-spacing:10px;
+        text-transform: uppercase;
+        margin-left: 3px;
       }
       #bx-01{
         animation-name: pos, fade;
@@ -240,14 +272,43 @@
         padding: 70px 0px;
       }
       #exp-block{
-        padding: 150px 10% 150px 20%;
+        padding: 150px 3% 150px 10%;
       }
       #exp-int{
-        padding: 150px 170px;
-        margin-left:25%;
+        padding: 150px 5%;
+        margin-left:50%;
+        width:50%;
+      }
+      #Experiential{
+        background-image: url('../img/Stock/adrien-olichon-1205269-unsplash.jpg');
+        background-size: 55%;
+        background-position-y: center;
+        background-repeat-y: no-repeat;
+        background-color: var(--Purple);
+        background-position-x: right;
+      }
+      #Interactive{
+        background-image: url('../img/Stock/casual-college-connection-1438081.jpg');
+        background-size: 120%;
+        background-position-y: center;
+        background-repeat-y: no-repeat;
+        background-color: var(--Purple);
+        background-position-x: right;
+      }
+      #Stand-Alone{
+        background-image: url('../img/Stock/vanilla-bear-films-1328761-unsplash.jpg');
+        background-size: 150%;
+        background-position-y: center;
+        background-repeat-y: no-repeat;
+        background-color: var(--Purple);
+        background-position-x: center;
+      }
+      #int-resp{
+        position: relative;
+        right: 100px;
       }
       .s-04-block{
-        width: 75%;
+        width: 100%;
       }
       .Watch-Btn{
         padding:10px 40px;
@@ -271,13 +332,17 @@
         background-color: var(--Dark);
       }
       .learn-btn{
-        background-color: #602d8f;
+        background-color: var(--Purple);
         width: 100px;
         padding: 10px 20px;
         color: white;
         margin-top: 50px;
         text-align: center;
         box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+        transition: all 0.5s;
+      }
+      .learn-btn:hover{
+        background-color: var(--Red);
       }
       .contact-text{
         width: 50%;
@@ -338,6 +403,9 @@
         .contact-form{
           width: 100%;
         }
+        #exp-block{
+          padding: 10% 10% 10% 10%;
+        }
       }
       @media (max-width: 815px){
         .cat-boxes{
@@ -362,7 +430,7 @@
           height: 200px
         }
         #exp-block{
-          padding: 150px 10% 150px 10%;
+          padding: 20px 10% 20px 10%;
         }
         #exp-int{
           padding: 150px 5%;
@@ -371,7 +439,7 @@
           padding: 0px;
         }
       }
-      @media (max-width: 640px){
+      @media (max-width: 700px){
         .top-banner-text h1{
           font-size:40px;
           line-height: 45px;
@@ -405,31 +473,45 @@
         .s-04-block{
           width: 100%;
         }
+        .s-04-main{
+          width:100%;
+        }
         #exp-int{
-          padding: 150px 5%;
+          padding: 50px 10%;
+          margin: 0px;
+          width:100%;
         }
         #int-resp{
-          margin-left: -30%
+          margin-left: 0px;
+          right: 0px;
         }
         .contact-text{
           padding: 80px 10%;
+        }
+        #exp-block{
+          padding: 50px 10% 50px 10%
         }
       }
     </style>
 
   </head>
-<body style="margin:0px; width: 100%; box-sizing: border-box;">
-  <div style="">
+<body style="">
+  <div style="max-width: 2000px; margin: auto;">
     <section title= "Studio Zafari" class="top-banner" style="">
       <div class="top-banner-text" style=''>
         <img src="img/Zafari_Logo_01-01.svg" alt="Zafari Logo" style="width:200px; margin: 10px 0px;"/>
         <h1 style="">Spark curiosity through your video content<span>.</span></h1>
-        <p class="tagline" style="">Design | Filming | Editing | Scriptwriting | Animation</p>
+        <p class="tagline" style="">Design | Scriptwriting | Filming | Animation | Editing</p>
         <div class="Banner-buttons" style="display: flex; flex-wrap: wrap; margin: 30px 0px;">
-          <a href="/"><div class="Top-Btn" style="width: 110px; padding: 12px 35px; color: white; margin-right: 20px; margin-bottom: 10px; text-align: center">Watch Demo
-          </div></a>
-          <a href="#Contact"><div class="Top-Btn" style="width: 110px; padding: 12px 35px; color: #fff; text-align: center; text-decoration: none">Contact Us
-          </div></a>
+          <!-- <a href="/">
+            <div class="Top-Btn" style="margin-bottom: 10px; ">
+              Play Video <i class="fas fa-play-circle"></i>
+            </div>
+          </a> -->
+          <a href="#Contact">
+            <div class="Top-Btn" style="">Contact Us
+            </div>
+          </a>
         </div>
       </div>
     </section>
@@ -438,7 +520,7 @@
               <div class="cat-boxes" id="bx-01" style="">
                 <div class="cat-tab" style="">
                 </div>
-                <h1 style="font-size: 20px">Experiential Learning</h1>
+                <h1 style="font-size: 20px">Experiential Video Learning</h1>
                 <p>We create narrative driven content that not only educates but takes the audience on an immersive learning journey.
                   Studio Zafari is a full service studio specialising in educational production and learning based adventures.</p>
                   <div class="cat-button" style="">
@@ -449,7 +531,7 @@
               <div class="cat-boxes" id="bx-02" style="">
                 <div class="cat-tab" style="">
                 </div>
-                <h1 style="font-size: 20px">Interactive Adventures</h1>
+                <h1 style="font-size: 20px">Interactive Video Adventures</h1>
                 <p>We create narrative driven content that not only educates but takes the audience on an immersive learning journey.
                   Studio Zafari is a full service studio specialising in educational production and learning based adventures.</p>
                   <div class="cat-button" style="">
@@ -460,7 +542,7 @@
               <div class="cat-boxes" id="bx-03" style="">
                 <div class="cat-tab" style="">
                 </div>
-                <h1 style="font-size: 20px">Stand-Alone Stories</h1>
+                <h1 style="font-size: 20px">Stand-Alone Content</h1>
                 <p>We create narrative driven content that not only educates but takes the audience on an immersive learning journey.
                   Studio Zafari is a full service studio specialising in educational production and learning based adventures.</p>
                   <div class="cat-button" style="">
@@ -474,45 +556,52 @@
       <div class="sec-03-desc" style="display: flex; flex-wrap: wrap;">
             <div class="s3-text-div"style="">
                 <h2 style="padding: 0px 0px;">Educational Production Studio<span>.</span></h2>
-                <p style="padding-right: 50px">We create narrative driven content that not only educates but takes the audience on an immersive learning journey. Studio Zafari is a full service studio specialising in educational production and learning based adventures.</p>
-           </div>
-           <div class="sec-03-vid-container" style="display: flex;
-           align-items: center;">
-             <div class="sec-03-vid-block">
+                <h4 style="padding-right: 0px">Need to teach people things online? Maybe you just want to share your know-how? Or spice up your website’s FAQ section?</h4>
+                <p> We can help you create content worth sharing.</p>
+                <p>We combine our years of experience in learning design and video production to create engaging learning based content.</p>
 
+           </div>
+           <div class="sec-03-vid-container" style="display: flex; align-items: center;">
+             <div class="sec-03-vid-block">
+               <img style="width:100%" src="img/Stock/sam-mcghee-281614-unsplash_BW.jpg" alt="Educational Production">
              </div>
            </div>
       </div>
     </section>
-    <section title= "Experiential Learning" class="sec-04"id="Experiential" style="background-color:var(--Purple)">
+    <section title= "Experiential Learning" class="sec-04"id="Experiential" style="background-color:var(--Dark)">
       <div class="s-04-main" id="exp-block" style="background-color: var(--Dark)">
         <div class="s-04-block" id="scrEf" style="">
-          <h2 style="color:#fff;">Experiential Learning<span>.</span></h2>
-          <p style="color:#fff">We create narrative driven content that not only educates but takes the audience on an immersive learning journey. Studio Zafari is a full service studio specialising in educational production and learning based adventures.</p>
-          <div class="learn-btn" style="">Learn More</div>
+          <h6 style="" >Experiential Learning</h6>
+          <h2 style="color:#fff; white-space: nowrap;">Real-life</br>Scenarios<span>.</span></h2>
+          <h4 style="color:#fff">Large content dumps can be overwhelming for learners, rather make it practical, with experiential video learning.</h4>
+          <p>We create video stories simulating real-life scenarios to help your learners be better equipped for the real thing.</p>
+          <a href="#Contact"><div class="learn-btn" style="">Learn More</div></a>
         </div>
       </div>
     </section>
-    <section title= "Interactive Learning" class="sec-04"id="Interactive" style="background-color:var(--Purple)">
-      <div class="s-04-main" id="exp-int" style="background-color: var(--Dark); width:75%; box-sizing: border-box;">
+    <section title= "Interactive Learning" class="sec-04"id="Interactive" style="background-color:var(--Dark)">
+      <div class="s-04-main" id="exp-int" style="background-color: var(--Dark); box-sizing: border-box;">
         <div class="s-04-block" id="int-resp" style="">
-          <h2 style="color:#fff">Interactive Adventures<span>.</span></h2>
-          <p style="color:#fff">We create narrative driven content that not only educates but takes the audience on an immersive learning journey. Studio Zafari is a full service studio specialising in educational production and learning based adventures.</p>
-          <div class="learn-btn" style="">Learn More</div>
+          <h6 style="" >Interactive Adventures</h6>
+          <h2 style="color:#fff">Choose your Adventure<span>.</span></h2>
+          <h4 style="color:#fff">Branching video scenarios let your learner choose their own path thought the content.</h4>
+          <p>This interactive form of learning challenges your audience to make decisions and presents immediate consequences.  These simulations let them test out different approaches in a low-risk setting.</p>
+          <a href="#Contact"><div class="learn-btn" style="">Learn More</div></a>
         </div>
       </div>
     </section>
-    <section title= "Stand-alone content" class="sec-04"id="Stand-Alone" style="background-color:var(--Purple)">
+    <section title= "Stand-alone content" class="sec-04"id="Stand-Alone" style="background-color:var(--Dark)">
       <div class="s-04-main" id="exp-block" style="background-color: var(--Dark);">
         <div class="s-04-block" style="">
-          <h2 style="color:#fff;">Stand-Alone
-            Stories<span>.</span></h2>
-          <p style="color:#fff">We create narrative driven content that not only educates but takes the audience on an immersive learning journey. Studio Zafari is a full service studio specialising in educational production and learning based adventures.</p>
-          <div class="learn-btn" style="">Learn More</div>
+          <h6 style="" >Stand-Alone content</h6>
+          <h2 style="color:#fff; white-space: nowrap;">Explainer</br>Videos<span>.</span></h2>
+          <h4 style="color:#fff">We do anything from explainer animations to presenter-led videos.</h4>
+            <p>Whether you have a blended approach or a fully online course, videos can be an engaging way of explaining difficult concepts. It’s important to cut through the noise so we break down complex content into engaging, catchy and easily consumable bites.</p>
+          <a href="#Contact"><div class="learn-btn" style="">Learn More</div></a>
         </div>
       </div>
     </section>
-    <section title= "Our Latest Content" class="sec-05" id="Latest" style="background-color:var(--Dark)">
+    <!-- <section title= "Our Latest Content" class="sec-05" id="Latest" style="background-color:var(--Dark)">
       <div class="" style="padding: 250px 80px; color: white; text-align: center;">
         <p style="color:#00ecbc; letter-spacing: 2px; font-weight: 900;">Our Latest Content</p>
         <h2 style="margin: 20px;">Data Privacy</h2>
@@ -520,11 +609,11 @@
         <p>Why are cookies so widely used online? Part of our interactive experience on Data Privacy</p>
         <div class="Watch-Btn"style="">Watch Now!</div>
       </div>
-    </section>
+    </section> -->
     <section title= "Our Services" class="sec-07" id="Services" style="display: flex">
       <div class="s-07-title" style="">
         <h2>Our Services<span>.</span></h2>
-        <p>We offer a range of different services which we use to deliver high quality content to you.</p>
+        <h4>We offer a range of different services which we use to deliver high quality content to you.</h4>
       </div>
       <div class="services-list-block" style="">
           <div class="" style="justify-content: center; display: flex; flex-wrap: wrap;">
@@ -534,24 +623,24 @@
                 <p>We will work with you to conceptualize and create a visual style</p>
               </div>
               <div class="service-boxes" style="">
+                <h3 style="">Scriptwriting</h3>
+                <div class="service-tab"></div>
+                <p>We’ll take your existing content and help mould it into engaging scripts, ready for filming or animating.</p>
+              </div>
+              <div class="service-boxes" style="">
                 <h3 style="">Filming</h3>
                 <div class="service-tab"></div>
-                <p>We will work with you to conceptualize and create a visual style</p>
+                <p>Flexible on-site filming. Whenever, where ever.</p>
               </div>
               <div class="service-boxes" style="">
                 <h3 style="">Animation</h3>
                 <div class="service-tab"></div>
-                <p>We will work with you to conceptualize and create a visual style</p>
-              </div>
-              <div class="service-boxes" style="">
-                <h3 style="">Scriptwriting</h3>
-                <div class="service-tab"></div>
-                <p>We will work with you to conceptualize and create a visual style</p>
+                <p>From Motion graphics to explainer animations</p>
               </div>
               <div class="service-boxes" style="">
                 <h3 style="">Editing</h3>
                 <div class="service-tab"></div>
-                <p>We will work with you to conceptualize and create a visual style</p>
+                <p>Stitching everything together to create engaging stories</p>
               </div>
           </div>
       </div>
@@ -559,7 +648,7 @@
     <section title= "Contact Us" class="sec-08" id="Contact" style="display: flex; flex-wrap: wrap;">
       <div class="contact-text" style="">
         <h2>Contact Us<span>.</span> </h2>
-        <p>Tell us what you are looking for and we will get back to you ASAP.</p>
+        <h4>Tell us what you are looking for and we will get back to you ASAP.</h4>
         <p>You can also reach us on: <a href="mailto:info@studiozafari.com?Subject=Hello!">info@studiozafari.com</a></p>
       </div>
       <div class="contact-form" style="">
