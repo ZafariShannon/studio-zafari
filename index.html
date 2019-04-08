@@ -41,7 +41,7 @@
       }
       .top-banner{
         color:#fff;
-        background-color: var(--Dark);
+        /* background-color: var(--Dark); */
         width:100%;
       }
       a{
@@ -357,12 +357,11 @@
       #myVideo{
         position: fixed;
         right: calc(-960px + 50vw);
-        bottom: 0;
-        min-width: 100%;
-        min-height: 100%;
+        bottom: 10px;
         z-index: -2;
         top:0px;
-        opacity: 0.8;
+        opacity: 0.7;
+        display: block;
       }
 
       /* Animation */
@@ -502,6 +501,12 @@
         #exp-block{
           padding: 50px 10% 50px 10%
         }
+        .top-banner{
+          background-color: var(--Dark);
+        }
+        #video{
+          display: none;
+        }
       }
     </style>
 
@@ -524,10 +529,12 @@
             </div>
           </a>
         </div>
-        <video autoplay muted loop id="myVideo">
-          <source src="src/VA_CE_C4_Acc.mp4" type="video/mp4">
-          Your browser does not support HTML5 video.
-        </video>
+        <div style="width: 100vw; overflow: hidden;">
+          <video autoplay muted loop id="myVideo">
+            <source src="src/VA_CE_C4_Acc.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+        </div>
       </div>
     </section>
     <section title= "Products" class="sec-02" id="Products" style="">
@@ -555,7 +562,7 @@
               <div class="cat-boxes" id="bx-03" style="">
                 <div class="cat-tab" style="">
                 </div>
-                <h1 style="">Stand-Alone Content</h1>
+                <h1 style="padding-right:20%">Stand-Alone Content</h1>
                 <p>We do anything from explainer animations to presenter-led videos…</p>
                   <div class="cat-button" style="">
                     Discover Move
