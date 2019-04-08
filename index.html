@@ -5,6 +5,7 @@
     <meta name="description" content="Full-service educational production company. Creating immersive learning adventures. Get a Quote">
     <meta name="keywords" content="Experiential, Post, Editing, Filming, Education, Scriptwriting,Learning, Edtech, Production, Educational Production, Global, E-learning, Videos, Explainers, Interactive Videos,">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta property=”og:title” content="Educational Production | Studio Zafari" />
     <meta property=”og:description” content="Create video content that sparks curiosity | Studio Zafari a full-service educational production company. Contact us now for a quote." />
     <meta property=”og:url” content="https://www.studiozafari.com"/>
@@ -20,7 +21,7 @@
     <link rel="shortcut icon" type="image/png" href="img/64w/Favicon_01.png"/>
     <link rel="stylesheet" href="https://use.typekit.net/www6qwr.css">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700,800" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
     <style media="screen">
       :root{
         --Dark: #25003d;
@@ -28,9 +29,6 @@
         --Red: #ff2e64;
         --Purple: #602d8f;
       }
-      /* *{
-        transition: all 5s;
-      } */
       body{
         font-family: 'Work Sans', sans-serif;
         background-color: var(--Purple);
@@ -104,6 +102,9 @@
         position:relative;
         top:0px;
         transition: background-color 1s, top 1s, color 1s, box-shadow 1s;
+      }
+      .cat-boxes h1{
+        font-size: 1.4em
       }
       .cat-boxes:hover {
         background-color:var(--Purple);
@@ -354,6 +355,17 @@
         width: 50%;
       }
 
+      #myVideo{
+        position: fixed;
+        right: calc(-960px + 50vw);
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -2;
+        top:0px;
+        opacity: 0.8;
+      }
+
       /* Animation */
 
       @keyframes pos {
@@ -369,11 +381,11 @@
 
       @media (max-width: 1076px){
         .cat-boxes{
-          width:32%;
+          width:75%;
         }
-        #bx-03{
+        /* #bx-03{
           width: 77%;
-        }
+        } */
         .sec-03-desc{
           padding-right: 10%
         }
@@ -513,6 +525,10 @@
             </div>
           </a>
         </div>
+        <!-- <video autoplay muted loop id="myVideo">
+          <source src="src/VA_CE_C4_Acc.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video> -->
       </div>
     </section>
     <section title= "Products" class="sec-02" id="Products" style="">
@@ -520,9 +536,8 @@
               <div class="cat-boxes" id="bx-01" style="">
                 <div class="cat-tab" style="">
                 </div>
-                <h1 style="font-size: 20px">Experiential Video Learning</h1>
-                <p>We create narrative driven content that not only educates but takes the audience on an immersive learning journey.
-                  Studio Zafari is a full service studio specialising in educational production and learning based adventures.</p>
+                <h1 style="">Experiential Video Learning</h1>
+                <p>Large content dumps can be overwhelming for learners, rather make it practical…</p>
                   <div class="cat-button" style="">
                     Discover Move
                   </div>
@@ -531,9 +546,8 @@
               <div class="cat-boxes" id="bx-02" style="">
                 <div class="cat-tab" style="">
                 </div>
-                <h1 style="font-size: 20px">Interactive Video Adventures</h1>
-                <p>We create narrative driven content that not only educates but takes the audience on an immersive learning journey.
-                  Studio Zafari is a full service studio specialising in educational production and learning based adventures.</p>
+                <h1 style="">Interactive Video Adventures</h1>
+                <p>Branching video scenarios let your learner choose their own adventure…</p>
                   <div class="cat-button" style="">
                     Discover Move
                   </div>
@@ -542,9 +556,8 @@
               <div class="cat-boxes" id="bx-03" style="">
                 <div class="cat-tab" style="">
                 </div>
-                <h1 style="font-size: 20px">Stand-Alone Content</h1>
-                <p>We create narrative driven content that not only educates but takes the audience on an immersive learning journey.
-                  Studio Zafari is a full service studio specialising in educational production and learning based adventures.</p>
+                <h1 style="">Stand-Alone Content</h1>
+                <p>We do anything from explainer animations to presenter-led videos…</p>
                   <div class="cat-button" style="">
                     Discover Move
                   </div>
