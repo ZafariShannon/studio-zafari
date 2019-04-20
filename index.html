@@ -37,6 +37,23 @@
 
       gtag('config', 'AW-753226843');
     </script>
+    
+    <!-- Event snippet for Lead Generation 01 conversion page-->
+      <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-753226843/gVp5CKLR9ZgBENuolecC',
+            'event_callback': callback
+        });
+        return false;
+      }
+      </script>
+
     <meta charset="utf-8">
     <meta name="description" content="Full-service educational video production company based in Cape Town. We create explainer video content and animations that spark curiosity. Get a Quote">
     <meta name="keywords" content="Experiential, elearning, Video Production, Cape Town, Social Media, Education, Explainers,Post-production, Editing, Filming, Education, Scriptwriting,Learning, Edtech, Production, Educational Production, Global, E-learning, Videos, Explainers, Interactive Videos,">
@@ -744,5 +761,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
   crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
+
+  <script>
+      window.onload = function() {
+          var anchors = document.getElementsById('button-7');
+          for(var i = 0; i < anchors.length; i++) {
+              var anchor = anchors[i];
+              anchor.onclick = gtag_report_conversion()
+          }
+      }
+  </script>
+
 </body>
 </html>
