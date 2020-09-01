@@ -77,13 +77,9 @@
 
     <style>
       :root{
-        --Dark: #25003d;
         --dark: #25003d;
-        --Green:#00ecbc;
         --green:#00ecbc;
-        --Red: #ff2e64;
         --red: #ff2e64;
-        --Purple: #602d8f;
         --purple: #602d8f;
       }
       body{
@@ -92,6 +88,7 @@
         margin:0px;
         width: 100%;
         box-sizing: border-box;
+        overflow-x: hidden;
       }
       html{
         scroll-behavior: smooth;
@@ -125,7 +122,7 @@
         font-size: 20px;
         font-weight:100;
         padding-right:20%;
-        color: var(--Green);
+        color: var(--green);
         letter-spacing:1px;
         word-spacing:2px;
         text-transform: uppercase;
@@ -265,7 +262,7 @@
         font-size: 70px;
         margin-bottom: 40px;
         margin-top: 15px;
-        font-weight: 900;
+        font-weight: 700;
       }
       h3{
         font-weight: 300;
@@ -435,7 +432,45 @@
         background-position: center;
         background-size: cover;
       }
-
+      .vid-box:hover .cnt-bx{
+        opacity: 1;
+      }
+      .vid-box:hover .cnt-bx div{
+        transform: translateX(30px);
+      }
+      .vid-box .cnt-bx div{
+        transition: all 1s;
+      }
+      .cnt-bx{
+        background-color: #00000080;
+        min-height: 260px;
+        opacity: 0;
+        color: white;
+        transition: all 1s;
+      }
+      .cnt-bx h2{
+        margin: 0;
+      }
+      .cnt-bx h5{
+        margin: 0;
+        font-size: 1.2em;
+        font-weight: 100;
+      }
+      .cnt-bx div{
+        padding-top:10%;
+        padding-left: 0%;
+        padding-right: 30px;
+      }
+      .cnt-bx div h2 {
+        font-size: 1.5em;
+      }
+      .vid-box{
+        background-size: cover;
+        background-position: center center;
+      }
+      .vid-gal-cont{
+        grid-template-columns: 33% 34% 33%;
+      }
       /* Animation */
 
       @keyframes pos {
@@ -477,6 +512,9 @@
       @media (max-width: 965px) {
         .top-banner-text h1{
           padding-right: 100px;
+        }
+        .vid-gal-cont{
+        grid-template-columns: 50% 50%;
         }
         .top-banner-text{
           padding:150px 10% 200px 15%;
@@ -530,6 +568,9 @@
           line-height: 45px;
           padding-right: 0px;
         }
+        .vid-gal-cont{
+        grid-template-columns: 100%;
+      }
         .top-banner-text{
           padding:50px 10% 150px 10%;
         }
@@ -629,7 +670,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="Top-Btn" style="margin-bottom: 10px;">Contact Us
             </div>
           </a>
-          <a href="https://explore.studiozafari.com">
+          <a href="#Work">
             <div class="Watch-Btn" style="margin-bottom: 10px; color: white;">
               Our Work <img style="width: 15px; margin-bottom: -3px;"src="img/Play_Arrow_01.svg" alt="play"/>
             </div>
@@ -670,6 +711,100 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <a href="#Stand-Alone"><span></span></a>
               </div>
         </div>
+    </section>
+    <section title="videos" class="sec-09" id="Work">
+      <div class="vid-gal-cont" style="display: grid;">
+        <a data-fancybox href="https://vimeo.com/323107042?autoplay=1&loop=1&autopause=0">
+          <div class="vid-box" id="vb-01" style="background-image: url('../img/vid/frame_923.jpg')">
+            <div class="cnt-bx">
+              <div>
+                <h2>Campaigning Excellence</h2>
+                <h5>UK Government</h5>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a data-fancybox href="https://www.youtube.com/watch?v=52zEnwqH5IM">
+          <div class="vid-box" id="vb-02" style="background-image: url('../img/vid/frame_400.jpg')">
+            <div class="cnt-bx">
+              <div>
+                <h2>Data Privacy</h2>
+                <h5>What is a Cookie?</h5>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a data-fancybox href="https://vimeo.com/323104471?autoplay=1&loop=1&autopause=0">
+          <div class="vid-box" id="vb-03" style="background-image: url('../img/vid/Frame_CC_001.jpg')">
+            <div class="cnt-bx">
+              <div>
+                <h2>Crisi Communications</h2>
+                <h5>UK Government</h5>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a data-fancybox href="https://player.vimeo.com/video/323104344?autoplay=1&loop=1&autopause=0">
+          <div class="vid-box" id="vb-04" style="background-image: url('../img/vid/Frame_NC_001.jpg')">
+            <div class="cnt-bx">
+              <div>
+                <h2>What is DMARC?</h2>
+                <h5>National Cyber Security Center</h5>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a data-fancybox href="https://player.vimeo.com/video/323104622?autoplay=1&loop=1&autopause=0">
+          <div class="vid-box" id="vb-04" style="background-image: url('../img/vid/Frame_CE_002.jpg')">
+            <div class="cnt-bx">
+              <div>
+                <h2>This is Campaigning </br>Excellence</h2>
+                <h5>UK Government</h5>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a data-fancybox href="https://youtu.be/-VPG0xsYNHo">
+          <div class="vid-box" id="vb-06" style="background-image: url('../img/vid/Frame_FR_001.jpg')">
+            <div class="cnt-bx">
+              <div>
+                <h2>What is Cloud Computing?</h2>
+                <h5>FourthRev</h5>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a data-fancybox href="https://youtu.be/057RrQnXlwM">
+          <div class="vid-box" id="vb-07" style="background-image: url('../img/vid/Frame_VA_001.jpg')">
+            <div class="cnt-bx">
+              <div>
+                <h2>Viper</h2>
+                <h5>Virtual Academies</h5>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a data-fancybox href="https://youtu.be/sBEE65E7xtg">
+          <div class="vid-box" id="vb-07" style="background-image: url('../img/vid/Frame_LH_001.jpg')">
+            <div class="cnt-bx">
+              <div>
+                <h2>Maritime Insurance</h2>
+                <h5>Martime Economics</h5>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a data-fancybox href="https://youtu.be/5muHZeTbeF0">
+          <div class="vid-box" id="vb-07" style="background-image: url('../img/vid/Euclid_Img_01.jpg')">
+            <div class="cnt-bx">
+              <div>
+                <h2>Quadrilaterals</h2>
+                <h5>Zafari Learn</h5>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
     </section>
     <section title= "About Us" class="sec-03" id="About">
       <div class="sec-03-desc" style="display: flex; flex-wrap: wrap; background-color: #f3f3f3;">
