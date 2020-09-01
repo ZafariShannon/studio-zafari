@@ -435,7 +435,40 @@
         background-position: center;
         background-size: cover;
       }
-
+      .vid-box:hover .cnt-bx{
+        opacity: 1;
+      }
+      .vid-box:hover .cnt-bx div{
+        padding-left: 10%
+      }
+      .vid-box .cnt-bx div{
+        transition: all 1s;
+      }
+      .cnt-bx{
+        background-color: #00000080;
+        min-height: 250px;
+        opacity: 0;
+        color: white;
+        transition: all 1s;
+      }
+      .cnt-bx h2{
+        margin: 0;
+      }
+      .cnt-bx h5{
+        margin: 0;
+        font-size: 1.2em;
+        font-weight: 100;
+      }
+      .cnt-bx div{
+        padding-top:10%;
+        padding-left: 0%
+      }
+      .cnt-bx div h2 {
+        font-size: 1.5em;
+      }
+      .vid-box{
+        background-size: cover;
+      }
       /* Animation */
 
       @keyframes pos {
@@ -672,7 +705,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </section>
     <section title= "videos" class="sec-09">
-
+      <div class="vid-gal-cont" style="display: grid; grid-template-columns: 33% 33% 34%;">
+        <a data-fancybox href="https://vimeo.com/323107042?autoplay=1&loop=1&autopause=0">
+          <div class="vid-box" id="vb-01" style="background-image: url('../img/vid/frame_923.jpg')">
+            <div class="cnt-bx">
+              <div>
+                <h2>Campaigning Excellence</h2>
+                <h5>UK Government</h5>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a data-fancybox href="https://www.youtube.com/watch?v=52zEnwqH5IM">
+          <div class="vid-box" id="vb-02" style="background-image: url('../img/vid/frame_400.jpg')">
+            <div class="cnt-bx">
+              <div>
+                <h2>Data Privacy</h2>
+                <h5>What is a Cookie?</h5>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
     </section>
     <section title= "About Us" class="sec-03" id="About">
       <div class="sec-03-desc" style="display: flex; flex-wrap: wrap; background-color: #f3f3f3;">
