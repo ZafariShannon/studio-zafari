@@ -468,9 +468,41 @@
         background-size: cover;
         background-position: center center;
       }
+      .overlay-box{
+        background-size: cover;
+        background-position: center center;
+      }
       .vid-gal-cont{
         grid-template-columns: 33% 34% 33%;
       }
+      .vid-box:hover#vb-01{
+        background-image: url('../img/gifs/VA_CE_C1.gif')
+      }
+      .vid-box:hover#vb-02{
+        background-image: url('../img/gifs/DP_CO_01.gif')
+      }
+      .vid-box:hover#vb-03{
+        background-image: url('../img/gifs/VA_CC_01.gif')
+      }
+      .vid-box:hover#vb-04{
+        background-image: url('../img/gifs/NC_001.gif')
+      }
+      .vid-box:hover#vb-05{
+        background-image: url('../img/gifs/VA_CE_GR_01.gif')
+      }
+      .vid-box:hover#vb-06{
+        background-image: url('../img/gifs/FR_CC_01.gif')
+      }
+      .vid-box:hover#vb-07{
+        background-image: url('../img/gifs/VA_VIPER_01.gif')
+      }
+      .vid-box:hover#vb-08{
+        background-image: url('../img/gifs/LH_ME_01.gif')
+      }
+      .vid-box:hover#vb-09{
+        background-image: url('../img/gifs/ZA_PA_01.gif')
+      }
+
       /* Animation */
 
       @keyframes pos {
@@ -660,7 +692,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </a>
     </section>
-    <section title= "Studio Zafari" class="top-banner">
+    <section title= "Studio Zafari" class="top-banner" style="display: flex;">
       <div class="top-banner-text">
         <img src="img/Zafari_Logo_01-01.svg" alt="Zafari Logo" style="width:200px; margin: 10px 0px;"/>
         <h1>Creating immersive learning adventures<span>.</span></h1>
@@ -677,6 +709,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </a>
         </div>
       </div>
+      <!-- <div id='lottie'></div> -->
     </section>
     <section title= "Products" class="sec-02" id="Products">
         <div class="cat-sect" style="z-index: 2">
@@ -715,91 +748,109 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <section title="videos" class="sec-09" id="Work">
       <div class="vid-gal-cont" style="display: grid;">
         <a data-fancybox href="https://vimeo.com/323107042?autoplay=1&loop=1&autopause=0">
-          <div class="vid-box" id="vb-01" style="background-image: url('../img/vid/frame_923.jpg')">
-            <div class="cnt-bx">
-              <div>
-                <h2>Campaigning Excellence</h2>
-                <h5>UK Government</h5>
+          <div class="overlay-box" style="background-image: url('../img/vid/frame_923.jpg')">
+            <div class="vid-box" id="vb-01">
+              <div class="cnt-bx">
+                <div>
+                  <h2>Campaigning Excellence</h2>
+                  <h5>UK Government</h5>
+                </div>
               </div>
             </div>
           </div>
         </a>
         <a data-fancybox href="https://www.youtube.com/watch?v=52zEnwqH5IM">
-          <div class="vid-box" id="vb-02" style="background-image: url('../img/vid/Frame_400.jpg')">
-            <div class="cnt-bx">
-              <div>
-                <h2>Data Privacy</h2>
-                <h5>What is a Cookie?</h5>
+          <div class="overlay-box" style="background-image: url('../img/vid/Frame_400.jpg')">
+            <div class="vid-box" id="vb-02">
+              <div class="cnt-bx">
+                <div>
+                  <h2>Data Privacy</h2>
+                  <h5>What is a Cookie?</h5>
+                </div>
               </div>
             </div>
           </div>
         </a>
         <a data-fancybox href="https://vimeo.com/323104471?autoplay=1&loop=1&autopause=0">
-          <div class="vid-box" id="vb-03" style="background-image: url('../img/vid/Frame_CC_001.jpg')">
-            <div class="cnt-bx">
-              <div>
-                <h2>Crisi Communications</h2>
-                <h5>UK Government</h5>
+          <div class="overlay-box" style="background-image: url('../img/vid/Frame_CC_001.jpg')">
+            <div class="vid-box" id="vb-03">
+              <div class="cnt-bx">
+                <div>
+                  <h2>Crisi Communications</h2>
+                  <h5>UK Government</h5>
+                </div>
               </div>
             </div>
           </div>
         </a>
         <a data-fancybox href="https://player.vimeo.com/video/323104344?autoplay=1&loop=1&autopause=0">
-          <div class="vid-box" id="vb-04" style="background-image: url('../img/vid/Frame_NC_001.jpg')">
-            <div class="cnt-bx">
-              <div>
-                <h2>What is DMARC?</h2>
-                <h5>National Cyber Security Center</h5>
+          <div class="overlay-box" style="background-image: url('../img/vid/Frame_NC_001.jpg')">
+            <div class="vid-box" id="vb-04" >
+              <div class="cnt-bx">
+                <div>
+                  <h2>What is DMARC?</h2>
+                  <h5>National Cyber Security Center</h5>
+                </div>
               </div>
             </div>
           </div>
         </a>
         <a data-fancybox href="https://player.vimeo.com/video/323104622?autoplay=1&loop=1&autopause=0">
-          <div class="vid-box" id="vb-04" style="background-image: url('../img/vid/Frame_CE_002.jpg')">
-            <div class="cnt-bx">
-              <div>
-                <h2>This is Campaigning </br>Excellence</h2>
-                <h5>UK Government</h5>
+          <div class="overlay-box" style="background-image: url('../img/vid/Frame_CE_002.jpg')">
+            <div class="vid-box" id="vb-05">
+              <div class="cnt-bx">
+                <div>
+                  <h2>This is Campaigning </br>Excellence</h2>
+                  <h5>UK Government</h5>
+                </div>
               </div>
             </div>
           </div>
         </a>
         <a data-fancybox href="https://youtu.be/-VPG0xsYNHo">
-          <div class="vid-box" id="vb-06" style="background-image: url('../img/vid/Frame_FR_001.jpg')">
-            <div class="cnt-bx">
-              <div>
-                <h2>What is Cloud Computing?</h2>
-                <h5>FourthRev</h5>
+          <div class="overlay-box" style="background-image: url('../img/vid/Frame_FR_001.jpg')">
+            <div class="vid-box" id="vb-06">
+              <div class="cnt-bx">
+                <div>
+                  <h2>What is Cloud Computing?</h2>
+                  <h5>FourthRev</h5>
+                </div>
               </div>
             </div>
           </div>
         </a>
         <a data-fancybox href="https://youtu.be/057RrQnXlwM">
-          <div class="vid-box" id="vb-07" style="background-image: url('../img/vid/Frame_VA_001.jpg')">
-            <div class="cnt-bx">
-              <div>
-                <h2>Viper</h2>
-                <h5>Virtual Academies</h5>
+          <div class="overlay-box" style="background-image: url('../img/vid/Frame_VA_001.jpg')">
+            <div class="vid-box" id="vb-07">
+              <div class="cnt-bx">
+                <div>
+                  <h2>Viper</h2>
+                  <h5>Virtual Academies</h5>
+                </div>
               </div>
             </div>
           </div>
         </a>
         <a data-fancybox href="https://youtu.be/sBEE65E7xtg">
-          <div class="vid-box" id="vb-07" style="background-image: url('../img/vid/Frame_LH_001.jpg')">
-            <div class="cnt-bx">
-              <div>
-                <h2>Maritime Insurance</h2>
-                <h5>Martime Economics</h5>
+          <div class="overlay-box" style="background-image: url('../img/vid/Frame_LH_001.jpg')">
+            <div class="vid-box" id="vb-08">
+              <div class="cnt-bx">
+                <div>
+                  <h2>Maritime Insurance</h2>
+                  <h5>Martime Economics</h5>
+                </div>
               </div>
             </div>
           </div>
         </a>
         <a data-fancybox href="https://youtu.be/5muHZeTbeF0">
-          <div class="vid-box" id="vb-07" style="background-image: url('../img/vid/Euclid_Img_01.jpg')">
-            <div class="cnt-bx">
-              <div>
-                <h2>Quadrilaterals</h2>
-                <h5>Zafari Learn</h5>
+          <div class="overlay-box" style="background-image: url('../img/vid/Euclid_Img_01.jpg')">
+            <div class="vid-box" id="vb-09">
+              <div class="cnt-bx">
+                <div>
+                  <h2>Quadrilaterals</h2>
+                  <h5>Zafari Learn</h5>
+                </div>
               </div>
             </div>
           </div>
@@ -921,6 +972,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </script>
     </section>
   </div>
+
+  <script src="js/lottie.js" type="text/javascript"></script>
   <script
   src="https://code.jquery.com/jquery-3.4.0.min.js"
   integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
@@ -928,4 +981,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
 </body>
+  <script src="main.js" type="text/javascript"></script>
 </html>
